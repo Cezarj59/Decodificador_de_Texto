@@ -49,11 +49,11 @@ Link:
 
 <h4>Técnologias Usadas.</h4>
 <ul>
-  <li>HTML5
+  <li><h4>HTML5</h4>
       <ul>
           <li>Formulários.</li>
       </ul>
-  <li>CSS
+  <li><h4>CSS</h4>
        <ul>
           <li>Responsividade.</li>
           <li>Flex-Box.</li>
@@ -61,7 +61,7 @@ Link:
           <li>Estilização.</li>
       </ul>
   </li>
-  <li>JavaScript
+  <li><h4>JavaScript</h4>
       <ul>
           <li>DOM.</li>
           <li>Funções.</li>
