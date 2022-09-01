@@ -47,7 +47,7 @@ Link:
 
 
 
-<h4>Técnologias Usadas.</h4>
+<h3>Técnologias e recursos utilizados.</h3>
 <ul>
   <li><h4>HTML5</h4>
       <ul>
