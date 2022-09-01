@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./style/img/lupa.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <section class="leftItens">
+            <h1 class="title">Decodificador</h1>
+            <div class="textLocal">
+                <input type="text" id="digiteTexto" placeholder="Digite seu texto...">
+            </div>
+            <div class="boxButton">
+                <div>
+                    <p id="textoVetor" class="alertVetor"><span id="iconeVetor" class="vetor">!</span>Apenas letras
+                        minúsculas sem acento.</p>
+
+                    <button type="submit" onclick="criptografar()" id="btn_criptografar"
+                        class="buttonCriptografar">Criptografar</button>
+
+                    <button type="submit" onclick="descriptografar()"
+                        class="buttonDescriptografar">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <div>
+            <div id="area" class="boxArea">
+                <div id="areaDecodificacao" class="localTexto">
+                </div>
+                <div id="secondArea"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

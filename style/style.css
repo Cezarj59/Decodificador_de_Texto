@@ -1,0 +1,363 @@
+@import url('http://fonts.cdnfonts.com/css/matrix');
+
+body {
+    background-color: black;
+    background-image: url('./img/background_1920x1080.jpg');
+    color: #fff;
+    font-family: 'Matrix', 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.leftItens {
+    display: grid;
+    align-content: space-between;
+}
+
+
+/* ----------Input txt inicial------------- */
+
+
+.textLocal input {
+    width: 680px;
+    height: 48px;
+    font-size: x-large;
+}
+
+/* --------------Box Area/Mensagem Erro----------- */
+.title {
+    text-transform: uppercase;
+
+    /* Alterar Media queries */
+    position: relative;
+    bottom: 40px;
+    right: 84px;
+}
+
+#digiteTexto {
+    background-color: rgba(3, 47, 32, 0.35);
+    backdrop-filter: blur(10px);
+    border: 1px rgba(5, 35, 23, 0.35) solid;
+    color: #C1FDD5;
+
+    /* Alterar Media queries */
+    position: relative;
+    left: 20px;
+    bottom: 168px;
+}
+
+.localTexto,
+.localTextoError {
+    margin-bottom: 50px;
+    padding: 15px;
+    width: 370px;
+    height: 550px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+.boxArea,
+.boxAreaError {
+    display: grid;
+    align-content: center;
+    border: 1px solid #AEE5C0;
+    border-radius: 32px;
+    /* Alterar Media queries */
+    width: 400px;
+    height: 840px;
+    text-align: center;
+    /* background-color: rgba(3, 47, 32, 0.35); */
+    backdrop-filter: blur(6px);
+    box-sizing: border-box;
+}
+
+.boxAreaError {
+    background-color: rgba(255, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    border: 1px #f00 solid;
+}
+
+.localTexto,
+.localTextoError {
+    padding: 15px;
+    width: 370px;
+    height: 550px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+.localTextoError {
+    height: 200px;
+}
+
+.msgInicial {
+    color: #C2FED5;
+    text-shadow: -1px -1px 0px #327F58,
+        -1px 1px 0px #327F58,
+        1px -1px 0px #327F58,
+        1px 0px 0px #327F58;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.msgInicial .titulo,
+.msg_error .titulo {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.msgInicial .msn_alerta {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    width: 336px;
+}
+
+.msg_error .msn_alerta {
+    font-size: 20px;
+}
+
+.msg_error {
+    text-transform: uppercase;
+}
+
+.alertVetor,
+.pError {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.pError {
+    color: #f00;
+}
+
+.vetor,
+.vetorError {
+    display: inline-block;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.vetorError {
+    background-color: #f00;
+}
+
+
+/*-------------------- Buttons---------------------- */
+
+.boxButton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding: 24px;
+    gap: 8;
+    /* border: #fff 1px solid; */
+}
+
+.buttonCriptografar,
+.buttonDescriptografar {
+    width: 328px;
+    height: 67px;
+    margin-left: 5px;
+    border: 1px solid #AEE5C0;
+    border-radius: 24px;
+    background-color: #0E1015;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.buttonCriptografar {
+    background-color: #28573C;
+}
+
+.buttonCriptografar:hover,
+.buttonDescriptografar:hover,
+#copiar:hover {
+    transform: scale(1.06);
+}
+
+#copiar {
+    width: 336px;
+    height: hug(64px);
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #28573C;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* --------------------------Media Queries --------------------------- */
+
+@media (max-width: 1580px) {
+
+
+    .title {
+        /* Alterar Media queries */
+        right: 44px;
+    }
+
+    #digiteTexto {
+        /* Alterar Media queries */
+        left: 20px;
+        bottom: 100px;
+    }
+
+    .boxArea,
+    .boxAreaError {
+        /* Alterar Media queries */
+        width: 380px;
+        height: 600px;
+    }
+
+    .localTexto,
+    .localTextoError {
+        padding: 15px;
+        width: 345px;
+        height: 390px;
+        overflow: auto;
+        word-wrap: break-word;
+    }
+
+    .msgInicial img {
+        width: 250px;
+    }
+
+}
+
+@media (max-width: 1310px) {
+    .title {
+        /* Alterar Media queries */
+        right: -10px;
+    }
+
+}
+
+@media (max-width: 1115px) {
+    .container {
+        display: inline-block;
+    }
+
+    .leftItens {
+        display: grid;
+        align-content: space-between;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    #digiteTexto {
+        /* Alterar Media queries */
+        left: auto;
+        bottom: auto;
+        margin: auto;
+        width: 100%;
+    }
+
+    .boxButton div {
+        margin: auto;
+    }
+
+    .boxArea,
+    .boxAreaError {
+        /* Alterar Media queries */
+        margin: auto;
+        width: 80%;
+        height: auto;
+    }
+
+    .localTexto,
+    .localTextoError {
+        padding: 15px;
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    .msgInicial img {
+        display: none;
+    }
+
+    #copiar {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 910px) {
+
+    .buttonCriptografar,
+    .buttonDescriptografar {
+        width: 270px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .buttonCriptografar,
+    .buttonDescriptografar {
+        width: 270px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 762px) {
+
+    .buttonCriptografar,
+    .buttonDescriptografar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 686px) {
+    .localTexto {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .textLocal {
+        width: 300px;
+        margin: auto;
+    }
+
+    .msgInicial .msn_alerta {
+        font-size: 16px;
+        width: 230px;
+    }
+}
